@@ -9,7 +9,7 @@
 npm install webpmux-bin
 ```
 
-#### Use a different version of `libwebp`
+### Use a different version of `libwebp`
 By default, **webpmux-bin** uses the webpmux binary from the **libwebp** version specified in its `package.json` (see `libwebp_version` key).
 
 But if you want, you can force this package to use another version of libwebp at the time you `npm install` it.
@@ -17,10 +17,11 @@ But if you want, you can force this package to use another version of libwebp at
 To do so, add the version to use to your `package.json` _**before**_ running `npm install webpmux`:
 ```json
 {
-    // can be specific version or "latest"
     "libwebp_version": "1.3.0"
 }
 ```
+_* Can be a specific version or `"latest"`._
+
 ## Usage
 
 ```js
